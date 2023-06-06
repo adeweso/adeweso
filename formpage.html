@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSC 227 Course</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            background: #7d2ae8;
+            background-size: cover;
+        }
+
+        .input-group{
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .input-group label{
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform:translateY(-10px);
+            font-size: 16px;
+            color: #ffff;
+            padding: 0 5px;
+            pointer-events: none;
+            transition: .3s;
+        }
+
+        .input-group input{
+            width: 320px;
+            height: 40px;
+            color: #ffff;
+            padding: 0 10px;
+            background: transparent;
+            border: 1.2px solid;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .input-group input:focus~label,
+        .input-group input:valid~label {
+            top: 0;
+            font-size: 12px;
+            background: #7d2ae8;
+
+        }
+
+        .button{
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: #7d2ae8;
+            color: aliceblue;
+            border-color:aliceblue;
+
+        }
+
+        .login{
+            font-size: 40px;
+            color: aliceblue;
+        }
+        .main-navbar
+        {
+            display: flex;
+            width: 100%;
+            background: black;
+            padding-inline: 8px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            margin-left: -15px;
+            margin-top: -250px;
+        }
+        .csc
+        {
+            color: white;
+            margin: 15px;
+            font-size: 2em;
+            margin-left: 30px;
+        }
+        .course{
+            color: orange;
+        }
+        p
+        {
+            color: white;
+            margin-left: 30px;
+        }
+        .main-navbar ul
+        {
+            display: flex;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: grey;
+        }
+        ul{
+            width: 25%;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            margin-right: 5%;
+        }
+        .home
+        {
+            color: orange;
+        }
+
+        .licence
+        {
+            margin-left: 30%;
+            margin-top: 60px;
+            font-size: 35px;
+
+        }
+        .menu
+        {
+            margin-left: 70px;
+            font-size: 40px;
+            margin-top: -100px;
+        }
+
+        .search{
+            margin-top: -160px;
+            margin-left: 60px;
+            padding-bottom: 60px;
+        }
+        .list
+        {
+            font-size: 30px;
+            margin-left: 30px;
+        }
+        .list li{
+            padding-top: 20px;
+        }
+        .img
+        {
+            margin-left: 550px;
+            margin-bottom: 70px;
+            margin-top: -400px;
+        }
+
+        .owner{
+            text-decoration: underline;
+        }
+
+        .date{
+            color: black;
+            margin-left: 30%;
+        }
+
+        .comment
+        {
+            text-decoration: underline;
+            color: orange;
+            margin-left: 90%;
+            padding-right: 40px;
+            margin-top: -40px;
+        }
+        .blue{
+            height: 250px;
+            width: 1850px;
+        }
+
+        form{
+            padding-top: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="main-navbar">
+        <div>
+            <h2 class="csc"> CSC 227 <span class="course">Course</span></h2>
+            <p>By damola</p>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="signup.html"  class="home">Sign Up</a></li>
+        </ul>
+    </nav>
+    <img src="images/orsrc2030.jpg" alt="" class="blue">
+
+    <form action="">
+    <h3 class="login">login</h3>
+    <div class="input-group">
+        <input type="text" required>
+        <label for="">first name</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text" required>
+        <label for="">last name</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text" required>
+        <label for="">matric number</label>
+    </div>
+
+    <div class="input-group">
+        <input type="text" required>
+        <label for="">department</label>
+    </div>
+    </form>
+
+    <button class="button">submit</button>
+</body>
+</html>
